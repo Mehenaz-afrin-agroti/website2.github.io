@@ -1,0 +1,156 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+
+        .t {
+            background: url(bangladesh.jpg)no-repeat;
+            height: 100vh;
+            background-size: cover;
+            animation: agroti 20s infinite linear;
+            
+        }
+        header p {
+            width: 20%;
+        }
+
+        header nav {
+            display: flex;
+            justify-content: space-between;
+            width: 37%;
+
+        }
+
+        header nav a {
+            text-decoration: none;
+            width: 30%;
+            text-transform: uppercase;
+            font-weight: 500;
+            font-size: 17px;
+        }
+
+        @keyframes agroti {
+            0% {
+                background: url(bangladesh.jpg)no-repeat;
+                height: 100vh;
+                background-size: cover;
+            }
+
+              
+
+            80% {
+                background: url(w.jpg)no-repeat;
+                height: 100vh;
+                background-size: cover;
+            }
+        }
+
+        header {
+            background-color: cadetblue;
+            height: 13vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        
+
+        main {
+            width: 100%;
+            height: 87vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+
+
+
+
+        main h1 span.change:after {
+            content: '';
+            animation: text 10s infinite linear;
+            color: aqua;
+        }
+
+        @keyframes text {
+            0% {
+                content: "bandarban"
+            }
+
+            20% {
+                content: "cox's bazar"
+            }
+
+            45% {
+                content: "Rangamati"
+            }
+
+            65% {
+                content: "khagrachori"
+            }
+
+            85% {
+                content: "syleth"
+            }
+
+            100% {
+                content: "chittagong"
+            }
+        }
+
+        main form input {
+            border-radius: 5px;
+            transition: .5s;
+            outline: none;
+            border: none;
+            padding: 3px;
+        }
+
+        main form input.b {
+            background-color: aqua;
+        }
+
+        main form input.a:hover {
+            background-color: aqua;
+        }
+
+        main form input.b:hover {
+            background-color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="t">
+        <header>
+            <p class="animated infinite heartbeat ">Beautiful <br>Bangladesh</p>
+            <nav>
+                <a href="">home</a>
+                <a href="">gallery</a>
+                <a href="https://www.youtube.com" target="_blank">about</a>
+                <a href="">contact</a>
+            </nav>
+        </header>
+        <main>
+            <div class="container">
+                <h3>Welcome to Bangladesh</h3>
+                <h1>do come & visit <span class="change"></span></h1>
+                <p>Banladesh Once Is Not Enough<p>
+                        <form>
+                            <input class="a" type="submit" value="Learn More">
+                            <input class="b" type="submit" value="SignUp Here">
+
+                        </form>
+            </div>
+        </main>
+    </div>
+</body></html>
